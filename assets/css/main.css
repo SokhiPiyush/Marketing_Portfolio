@@ -724,13 +724,14 @@ body {
 }
 @media (max-width: 900px) {
   .intro--banner {
-    height: 380px;
+    height: 400px;
   }
   .intro--banner h1 {
     font-size: 55px;
   }
   .intro--banner img {
-    width: 430px;
+    /* width: 400px; */
+    height: auto;
   }
   .intro--options > a {
     margin-right: 30px;
@@ -761,7 +762,7 @@ body {
     margin-bottom: 0;
   }
 }
-@media (max-width: 600px) {
+@media (max-width: 800px) {
   .intro--banner {
     height: 360px;
   }
@@ -781,6 +782,7 @@ body {
   .intro--banner::after {
     display: none;
   }
+  
   .intro--banner h1 {
     margin-top: 0;
   }
@@ -788,6 +790,23 @@ body {
     display: none;
   }
 }
+
+@media(max-width: 385px) {
+  .intro--banner {
+    height: 360px;
+  }
+  .intro--banner img {
+   /* display: block; */
+    width: 280px;
+    position: absolute;
+    top: 30%;
+  }
+  .intro--banner h1 {
+    font-size: 70px;
+  }
+ 
+}
+
 .work {
   position: relative;
   display: -webkit-box;
